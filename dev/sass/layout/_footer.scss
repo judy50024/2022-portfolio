@@ -1,0 +1,139 @@
+footer{
+   .footer{
+       z-index: 999;
+        // border: 1px solid black;
+        width: 100%;
+            &_bcgicon{
+                // border: 1px solid black;
+                width:100%;
+                margin: -50px auto;
+                
+                &_img{
+                    // border: 1px solid black;
+                    width: 90%;
+                    display: flex;
+                    margin: auto;
+                    &_1{
+                        // border: 1px solid black;
+                        margin-top: 40px;
+                        
+                    }
+                    &_2{ 
+                        // border: 1px solid black;
+                        position:absolute;
+                        right: 5%;
+                    }
+
+                }
+            }
+            .item{
+                z-index:-1;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+                background-image: url("../images/footer/footer.svg");
+                height: 400px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                padding-top: 120px;
+
+                @include small_pad{
+                    padding-top: 100px;
+                    height: 500px;
+                }
+                @include mobile{
+
+                    height: 550px;
+                }
+                .up{
+                    // border: 1px solid black;
+                    display: flex;
+                    width: 90%;
+                    margin: auto;
+                    @include small_pad{
+                        display: block;
+                    }
+                    .help{
+                        // border: 1px solid green;
+                        display: block;
+                        flex-basis: 50%;
+                        @include pad{
+                            flex-basis: 55%; 
+                        }
+                        h3{
+                            text-align: center;
+                            line-height: 3;
+                        }
+                        .text{
+                            // border: 1px solid red;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 5px;
+                            
+                            
+                            h5{
+                                // border: 1px solid fuchsia;
+                                padding: 0px 10px;
+                                color: black;
+                                
+                                @include pad{
+                                    padding: 0px 5px;
+                                }
+                                @include small_pad{
+                                    padding: 0px 20px;
+                                }
+                                @include mobile{
+                                    padding: 0px 5px;
+                                }
+                                
+                            }
+                           
+                            
+                        }
+                    }
+                    .service{
+                        // border: 1px solid lightcoral;
+                        display: block;
+                        flex-basis: 50%;
+                        @include pad{
+                            flex-basis: 45%; 
+                        }
+                        h3{
+                            // border: 1px solid darkcyan;
+                            text-align: center;
+                            line-height: 3;
+                        }
+                        .img{
+                            // border: 1px solid darkcyan;
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            .icon{
+                                // border: 1px solid darkcyan;
+                                margin-right: 55px;
+                                @include pad{
+                                    margin-right: 25px;
+                                }
+                                @include small_pad{
+                                    margin-right: 40px;
+                                }
+                            }
+                            .icon:last-child{
+                                margin-right: 0px;
+                            }
+                        }
+
+                    }
+                }
+                .down{
+                    // border: 1px solid black;
+                    margin: 30px auto;
+                    width: 80%;
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+            }
+   }
+}

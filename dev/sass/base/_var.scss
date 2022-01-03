@@ -1,0 +1,244 @@
+// 全域
+* {
+  box-sizing: border-box;
+  font-family:'roboto';
+}
+img {
+  //解決圖片下方留白問題
+  display: block;
+  font-size: 0;
+}
+
+//======================================= 顏色
+$black: #393939;
+$white: #FFFFFF;
+$red: #FF0082;
+$yellow: #FFCD1A;
+$blue: #1C7EEE;
+
+//======================================= a標籤
+a {
+  text-decoration: none;
+  color: black;
+}
+
+//======================================= 字體大小
+//字體Noto Sans TC
+@font-face {
+  font-family:'jf-openhuninn-1.1';
+  src:  
+       url("fonts/jf-openhuninn-1.1.ttf")  format("truetype"),
+       url("fonts/jf-openhuninn-1.1.woff") format("woff"),
+       url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap"),
+
+ }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  //   font-family: "Noto Sans TC", sans-serif;
+  font-family: "jf-openhuninn-1.1";
+}
+
+// Noto Sans
+$h1: 40px;
+$h2: 32px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+
+// jf-openhuninn-1.1
+$title: 18px;
+$subtitle: 16px;
+$body: 14px;
+$caption: 12px;
+$small: 10px;
+
+h1 {
+  font-size: $h1;
+  line-height: 54px;
+}
+h2 {
+  font-size: $h2;
+  line-height: 44px;
+}
+h3 {
+  font-size: $h3;
+  line-height: 33px;
+}
+h4 {
+  font-size: $h4;
+  line-height: 27px;
+}
+h5 {
+  font-size: $h5;
+  line-height: 25px;
+}
+
+.h1 {
+  font-size: $h1;
+  line-height: 54px;
+}
+.h2 {
+  font-size: $h2;
+  line-height: 44px;
+}
+.h3 {
+  font-size: $h3;
+  line-height: 33px;
+}
+.h4 {
+  font-size: $h4;
+  line-height: 27px;
+}
+.h5 {
+  font-size: $h5;
+  line-height: 25px;
+}
+
+.title{
+  font-size: $title;
+  line-height: 22px;
+}
+
+.subtitle{
+  font-size: $subtitle;
+  line-height: 18px;
+}
+
+.body{
+  font-size: $body;
+  line-height: 16px;
+}
+
+.caption{
+  font-size: $caption;
+  line-height: 14px;
+}
+
+.small{
+  font-size: $small;
+  line-height: 12px;
+}
+
+
+// ======================================= 按鈕
+button {
+  border: none;
+}
+
+// button
+.btn_primary_md {
+  border: none;
+  transition: 0.3s;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px 20px 12px 20px;
+  background: $primary_yellow;
+  color: $neutral_black;
+  cursor: pointer;
+
+  &:hover {
+    background: $secondary_orange;
+    transition: 0.3s;
+  }
+  &:disabled {
+    background: $ultra_light_gray_200;
+  }
+}
+.btn_primary_sm {
+  border: none;
+  transition: 0.3s;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 6px 20px 6px 20px;
+  background: $primary_yellow;
+  color: $neutral_black;
+  cursor: pointer;
+  &:hover {
+    background: $secondary_orange;
+    transition: 0.3s;
+  }
+  &:disabled {
+    background: $ultra_light_gray_200;
+  }
+}
+.btn_neutral_md {
+  border: none;
+  transition: 0.3s;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px 20px 12px 20px;
+  background: $neutral_black;
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    background: $light_gray_400;
+    transition: 0.3s;
+  }
+  &:disabled {
+    background: $ultra_light_gray_200;
+  }
+}
+.btn_neutral_sm {
+  border: none;
+  transition: 0.3s;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 6px 20px 6px 20px;
+  background: $neutral_black;
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    background: $light_gray_400;
+    transition: 0.3s;
+  }
+  &:disabled {
+    background: $ultra_light_gray_200;
+  }
+}
+
+// ======================================= 陰影
+$shadow_md: 0px 4px 6px 0px #0000001A, 0px 2px 4px 0px #0000000F;  
+$shadow_lg: 0px 4px 6px 0px #0000000D, 0px 10px 15px 0px #0000001A;
+
+
+// ======================================= RWD
+$lg_bkpoint: 1441.02px; //大於桌機
+$m_bkpoint: 991.98px; //橫式平板
+$ms_bkpoint: 767.98px; //平板
+$s_bkpoint: 575.98px; //小平板
+$xs_bkpoint: 413.98px; //垂直手機
+
+@mixin lg-desktop {
+  @media(max-width:$lg_bkpoint) {
+    @content;
+  }
+}
+
+@mixin latop {
+  @media(max-width:$m_bkpoint){
+    @content;
+  }
+}
+
+@mixin pad {
+  @media(max-width:$ms_bkpoint) {
+    @content;
+  }
+}
+
+@mixin small_pad {
+  @media(max-width:$s_bkpoint) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media(max-width:$xs_bkpoint) {
+    @content;
+  }
+}
+
