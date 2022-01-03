@@ -1,12 +1,20 @@
 // 全域
+//======================================= 字體大小
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 * {
   box-sizing: border-box;
-  font-family:'roboto';
+  font-family: 'Roboto Condensed', sans-serif;
 }
 img {
   //解決圖片下方留白問題
   display: block;
   font-size: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 4.2rem auto;
+  padding: 2rem;
 }
 
 //======================================= 顏色
@@ -22,105 +30,63 @@ a {
   color: black;
 }
 
-//======================================= 字體大小
-//字體Noto Sans TC
-@font-face {
-  font-family:'jf-openhuninn-1.1';
-  src:  
-       url("fonts/jf-openhuninn-1.1.ttf")  format("truetype"),
-       url("fonts/jf-openhuninn-1.1.woff") format("woff"),
-       url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap"),
-
- }
-
 h1,
 h2,
 h3,
 h4,
-h5 {
-  //   font-family: "Noto Sans TC", sans-serif;
-  font-family: "jf-openhuninn-1.1";
+h5,
+h6,
+p {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-// Noto Sans
-$h1: 40px;
-$h2: 32px;
-$h3: 24px;
-$h4: 20px;
-$h5: 18px;
+// fonts
+$h1: 60px;
+$h2: 40px;
 
-// jf-openhuninn-1.1
-$title: 18px;
-$subtitle: 16px;
-$body: 14px;
-$caption: 12px;
-$small: 10px;
+$title: 40px;
+$subtitle: 32px;
+$paragraph: 18px;
+$small: 14px;
+
+$font-color: $black;
 
 h1 {
   font-size: $h1;
-  line-height: 54px;
+  line-height: 68px;
+  color: $font-color;
 }
+
 h2 {
   font-size: $h2;
   line-height: 44px;
-}
-h3 {
-  font-size: $h3;
-  line-height: 33px;
-}
-h4 {
-  font-size: $h4;
-  line-height: 27px;
-}
-h5 {
-  font-size: $h5;
-  line-height: 25px;
+  color: $font-color;
+  margin: 1rem 0;
 }
 
-.h1 {
-  font-size: $h1;
-  line-height: 54px;
-}
-.h2 {
-  font-size: $h2;
-  line-height: 44px;
-}
-.h3 {
-  font-size: $h3;
-  line-height: 33px;
-}
-.h4 {
-  font-size: $h4;
-  line-height: 27px;
-}
-.h5 {
-  font-size: $h5;
-  line-height: 25px;
-}
 
 .title{
   font-size: $title;
   line-height: 22px;
+  color: $font-color;
 }
 
 .subtitle{
   font-size: $subtitle;
-  line-height: 18px;
+  line-height: 40px;
+  color: $font-color;
 }
 
-.body{
-  font-size: $body;
-  line-height: 16px;
-}
-
-.caption{
-  font-size: $caption;
-  line-height: 14px;
+.paragraph{
+  font-size: $paragraph;
+  line-height: 28px;
+  color: $font-color;
 }
 
 .small{
   font-size: $small;
   line-height: 12px;
+  color: $font-color;
 }
 
 
@@ -128,81 +94,6 @@ h5 {
 button {
   border: none;
 }
-
-// button
-.btn_primary_md {
-  border: none;
-  transition: 0.3s;
-  font-size: 16px;
-  border-radius: 8px;
-  padding: 12px 20px 12px 20px;
-  background: $primary_yellow;
-  color: $neutral_black;
-  cursor: pointer;
-
-  &:hover {
-    background: $secondary_orange;
-    transition: 0.3s;
-  }
-  &:disabled {
-    background: $ultra_light_gray_200;
-  }
-}
-.btn_primary_sm {
-  border: none;
-  transition: 0.3s;
-  font-size: 14px;
-  border-radius: 8px;
-  padding: 6px 20px 6px 20px;
-  background: $primary_yellow;
-  color: $neutral_black;
-  cursor: pointer;
-  &:hover {
-    background: $secondary_orange;
-    transition: 0.3s;
-  }
-  &:disabled {
-    background: $ultra_light_gray_200;
-  }
-}
-.btn_neutral_md {
-  border: none;
-  transition: 0.3s;
-  font-size: 16px;
-  border-radius: 8px;
-  padding: 12px 20px 12px 20px;
-  background: $neutral_black;
-  color: $white;
-  cursor: pointer;
-  &:hover {
-    background: $light_gray_400;
-    transition: 0.3s;
-  }
-  &:disabled {
-    background: $ultra_light_gray_200;
-  }
-}
-.btn_neutral_sm {
-  border: none;
-  transition: 0.3s;
-  font-size: 14px;
-  border-radius: 8px;
-  padding: 6px 20px 6px 20px;
-  background: $neutral_black;
-  color: $white;
-  cursor: pointer;
-  &:hover {
-    background: $light_gray_400;
-    transition: 0.3s;
-  }
-  &:disabled {
-    background: $ultra_light_gray_200;
-  }
-}
-
-// ======================================= 陰影
-$shadow_md: 0px 4px 6px 0px #0000001A, 0px 2px 4px 0px #0000000F;  
-$shadow_lg: 0px 4px 6px 0px #0000000D, 0px 10px 15px 0px #0000001A;
 
 
 // ======================================= RWD

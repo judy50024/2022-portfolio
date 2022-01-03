@@ -1,0 +1,22 @@
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li{
+        margin: 2rem;
+        display: inline;
+
+        a{
+            transition: .3s;
+            
+            &:hover{
+                color: $red;
+                
+            }
+        }
+
+    }
+
+}

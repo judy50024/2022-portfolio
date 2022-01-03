@@ -4,11 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../dist/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>hihihihi</h1>
-    
+<!-- navbar -->
+@@include('./layout/navbar.html')
+
+<!-- heading -->
+    <div class="heading-container container"> 
+        <h1>Judy Li <br> Web Developer & Designer</h1>
+        <p class="subtitle">I'm a designer turned developer. <br>
+            Currently, I'm focused on building things for web with trendy UI, interaction and human-centered design.
+        </p>
+    </div>
+<!-- work -->
+    <div class="work-container container">
+        <h2>Work</h2>
+        <a href=""><img src="" alt=""></a>
+        <p class="paragraph">Work Title</p>
+        <p class="paragraph">Work description</p>
+
+        <div class="ctas">
+            <a href="">
+                <button class="github">View Github</button>
+            </a>
+            <a href="">
+                <button class="view">View It Here</button>
+            </a>     
+        </div>
+    </div>
+
+<!-- about -->
+<div class="about-container container">
+    <h2>About</h2>
+    <p class="paragraph">
+        I’m Judy Li, <br>
+        a professional UI/UX Designer with Front end Development skills. <br>
+        I develop websites with HTML, CSS and JavaScript. <br>
+        I have top skills and creativity in using design softwares like Figma, Adobe XD, Illustrator and Photoshop.
+        <br><br>
+        My top goal is to combine aesthetic with technology, and never stop learning new things.
+    </p>
+    <a href="">
+        <button class="resume">See Resume</button>
+    </a>   
+</div>
+
+<!-- work experience -->
+<div class="experience-container container">
+    <h2>Where I’ve worked</h2>
+    <div class="tabs">
+        <ul>
+            <li>Uprithm KK</li>
+            <li>Milliman</li>
+            <li>Uber</li>
+            <li>OPPO</li>
+        </ul>
+    </div>
+</div>
+
+<!-- services -->
+<div class="services-container container">
+    <h2>Services</h2>
+    <div class="services-container">
+        <div class="services-item">
+            <img src="" alt="">
+            <p class="paragraph">Web Development</p>
+        </div>
+        <div class="services-item">
+            <img src="" alt="">
+            <p class="paragraph">Product Design</p>
+        </div>
+        <div class="services-item">
+            <img src="" alt="">
+            <p class="paragraph">Graphic Design</p>
+        </div>
+    </div>
+</div>
+
+<!-- tech stack -->
+<div class="tech-container">
+    <h2>Tech Stack</h2>
+    <span class="tech-carousel">
+        <img src="" alt="">
+    </span>
+</div>
+
+<!-- contact -->
+<div class="contact-container">
+    <h2>Contact</h2>
+    <p class="paragraph">Got questions? <br>
+        Interested in collaboration? <br>
+        Feel free to drop a message. 
+    </p>
+    <form action="">
+        <label for="name">Name
+            <input type="text" name="name" id="name">
+        </label>
+        <label for="email">Email
+            <input type="email" name="email" id="email">
+        </label>
+        <label for="message">Message
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
 </body>
 </html>
