@@ -1,22 +1,4 @@
-## 首次開發 (僅第一次，之後就不需要此步驟)
-```
-git clone https://github.com/imrussyq/six-team.git
-git branch dev_組員名
-git checkout dev_組員名
-git add .
-git commit -m "init"
-git push --set-upstream origin dev_組員名
-```
 
-### 小組分支
-```
-歐育銓： dev_yuquan
-陳宜欣： dev_yishin
-許寓嵐： dev_yulan
-李雯雯： dev_wenwen
-吳政諺： dev_chengyen
-蘇翊鈞： dev_yijyun
-```
 
 ## 開發時   
 ```
