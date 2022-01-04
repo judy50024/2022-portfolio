@@ -1,8 +1,157 @@
+.background{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(.././images/background.png);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
 // heading
 .heading-container{
+    position: relative;
+    top: 60px;
     p{
         margin: 2rem 0;
     }
 }
 
-// work
+
+.background-section{
+    background-color: $black;
+    width: 100%;
+    height: 100%;
+
+    h2{
+        color: $white;
+        text-align: center;
+        padding: 2rem 0;
+
+    }
+    p{
+        color: $white;
+    }
+
+    .services-container{
+        display: flex;
+        margin: 0 auto;
+        padding: 1rem;
+
+        .services-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                max-width: 400px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+//about
+
+//techstack
+.tech-container{
+    // border: solid 1px red;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tech-carousel-container{
+        height: 100px;
+        width: 100%;
+      
+        overflow: hidden;
+        position: relative;
+
+        .tech-carousel{
+            display: block;
+            width: 200%;
+            height: 100px;
+          
+            position: absolute;
+            overflow: hidden;
+          
+            animation: marquee 20s linear infinite;
+
+            @keyframes marquee {
+                0% { left: 0; }
+                100% { left: -100%; }
+              }
+
+            img{
+                float: left;
+                width: 50%;
+                padding: 1rem;
+            }
+
+        }
+
+
+    }
+}
+
+//work{
+.work-item{
+    border: solid 1px blue;
+    display: flex;
+    flex-direction: row;
+
+
+    .work-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .work-description{
+            padding: 1rem;
+        }
+
+        .ctas{
+            text-align: center;
+        }
+
+    }
+}
+
+// contact
+.contact-container{
+    max-width: 600px;
+    // border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contact-box{
+        margin-bottom: 2rem;
+        width: 60%;
+    }
+
+form{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        label{
+            margin: 1rem 0;
+
+            input, textarea{
+                border: solid 1px $red;
+                width: 100%;
+                height: 32px;
+                margin-top: .5rem;
+                background-color: transparent;
+            }
+
+            textarea{
+                height: 120px;
+                background-color: transparent;
+            }
+        }
+    }
+}

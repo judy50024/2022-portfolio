@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<div class="background">
 <!-- navbar -->
 @@include('./layout/navbar.html')
 
@@ -19,24 +20,33 @@
         </p>
     </div>
 <!-- work -->
-    <div class="work-container container">
+    <div class="work-container container" id="work">
         <h2>Work</h2>
-        <a href=""><img src="" alt=""></a>
-        <p class="paragraph">Work Title</p>
-        <p class="paragraph">Work description</p>
+        <div class="work-item">
 
-        <div class="ctas">
-            <a href="">
-                <button class="github">View Github</button>
-            </a>
-            <a href="">
-                <button class="view">View It Here</button>
-            </a>     
+            <a href="https://placeholder.com"><img src="https://via.placeholder.com/660x440" alt=""></a>
+            <div class="work-info">
+                <div class="work-description">
+                    <p class="subtitle">Work Title</p>
+                    <p class="paragraph">Work description
+                        eius modi repellat, ipsum omnis explicabo ab itaque possimus, atque exercitationem corporis earum a eveniet laboriosam? Eius vitae voluptatum qui eum modi sequi itaque alias cumque perspiciatis molestiae reprehenderit ducimus voluptatibus aperiam beatae ipsa maxime, temporibus error? Nam temporibus eius velit esse, quae saepe?
+                    </p>
+                </div>
+                <div class="ctas">
+                    <a href="">
+                        <button id="view-project">View It Here</button>
+                    </a>   
+                    <a href="">
+                        <button id="view-github">View Github</button>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 
 <!-- about -->
-<div class="about-container container">
+<div class="about-container container" id="about">
     <h2>About</h2>
     <p class="paragraph">
         I’m Judy Li, <br>
@@ -47,12 +57,12 @@
         My top goal is to combine aesthetic with technology, and never stop learning new things.
     </p>
     <a href="">
-        <button class="resume">See Resume</button>
+        <button id="resume">See Resume</button>
     </a>   
 </div>
 
 <!-- work experience -->
-<div class="experience-container container">
+<div class="experience-container container"s>
     <h2>Where I’ve worked</h2>
     <div class="tabs">
         <ul>
@@ -65,51 +75,61 @@
 </div>
 
 <!-- services -->
-<div class="services-container container">
-    <h2>Services</h2>
-    <div class="services-container">
-        <div class="services-item">
-            <img src="" alt="">
-            <p class="paragraph">Web Development</p>
+<div class="background-section" id="services">
+    <h2 >Services</h2>
+    <div class="services-container container">
+        <div class="services-container">
+            <div class="services-item">
+                <img src="./images/services-web.png" alt="services-web">
+                <p class="subtitle">Web Development</p>
+            </div>
+            <div class="services-item">
+                <img src="./images/services-product.png" alt="services-product">
+                <p class="subtitle">Product Design</p>
+            </div>
+            <div class="services-item">
+                <img src="./images/services-graphic.png" alt="services-graphic">
+                <p class="subtitle">Graphic Design</p>
+            </div>
         </div>
-        <div class="services-item">
-            <img src="" alt="">
-            <p class="paragraph">Product Design</p>
-        </div>
-        <div class="services-item">
-            <img src="" alt="">
-            <p class="paragraph">Graphic Design</p>
+    </div>
+
+    <!-- tech stack -->
+    <div class="tech-container">
+        <h2>Tech Stack</h2>
+        <div class="tech-carousel-container">
+            <div class="tech-carousel">
+                <img src="././images/carousel.svg" alt="tech-stack">
+                <img src="././images/carousel.svg" alt="tech-stack">
+            </div> 
         </div>
     </div>
 </div>
 
-<!-- tech stack -->
-<div class="tech-container">
-    <h2>Tech Stack</h2>
-    <span class="tech-carousel">
-        <img src="" alt="">
-    </span>
-</div>
-
 <!-- contact -->
-<div class="contact-container">
-    <h2>Contact</h2>
-    <p class="paragraph">Got questions? <br>
-        Interested in collaboration? <br>
-        Feel free to drop a message. 
-    </p>
+<div class="contact-container container" id="contact">
+    <div class="contact-box">
+        <h2>Contact</h2>
+        <p class="paragraph">Got questions? <br>
+            Interested in collaboration? <br>
+            Feel free to drop a message. 
+        </p>
+    </div>
+
     <form action="">
-        <label for="name">Name
+        <label for="name">Name<br>
             <input type="text" name="name" id="name">
         </label>
-        <label for="email">Email
+        <label for="email">Email<br>
             <input type="email" name="email" id="email">
         </label>
-        <label for="message">Message
+        <label for="message">Message<br>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </label>
-        <input type="submit" value="Submit">
-    </form>
+        <button class="">Submit</button>
+    </form>    
+
+</div>
 </div>
 
 </body>
