@@ -10,6 +10,8 @@
     top: 0;
 }
 
+
+
 // heading
 .heading-container{
     position: relative;
@@ -120,6 +122,54 @@
 
     }
 }
+
+//experience
+.experience-box{
+    border: solid 1px red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .experience-item{
+        border: solid 1px blue;
+        display: inline-flex;
+        flex-direction: column;
+        width: 40%;
+  
+
+        .tablinks{
+                border-left: solid 4px $red;
+                cursor: pointer;
+                padding: .5rem;
+                margin: 1rem;
+                transition: .3s;
+
+                &:hover{
+                    color: $red;
+                    transition: .3s;
+                }
+        }
+    }
+
+    #Uprithm{
+        display: block;
+        border: solid 1px red;
+    }
+
+    .tabcontent{
+        border: solid 1px orange;
+        margin: 0;
+        display: none;
+
+        &>*{
+            padding: .4rem 0;
+        }
+
+
+    }
+
+}
+
 
 // contact
 .contact-container{

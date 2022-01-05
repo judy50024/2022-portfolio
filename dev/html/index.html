@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/css/style.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/a39c52b3e6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="background">
@@ -34,10 +35,14 @@
                 </div>
                 <div class="ctas">
                     <a href="">
-                        <button id="view-project">View It Here</button>
+                        <button id="view-project" class="external">
+                            <i class="fas fa-external-link-alt"></i>View It Here
+                        </button>
                     </a>   
                     <a href="">
-                        <button id="view-github">View Github</button>
+                        <button id="view-github" class="github">
+                            <i class="fab fa-github"></i>View Github
+                        </button>
                     </a>
                 </div>
             </div>
@@ -57,13 +62,13 @@
         My top goal is to combine aesthetic with technology, and never stop learning new things.
     </p>
     <a href="">
-        <button id="resume">See Resume</button>
+        <button id="resume" class="external">See Resume</button>
     </a>   
 </div>
 
 <!-- work experience -->
-<div class="experience-container container"s>
-    <h2>Where I’ve worked</h2>
+<!-- <div class="experience-container container">
+
     <div class="tabs">
         <ul>
             <li>Uprithm KK</li>
@@ -71,6 +76,33 @@
             <li>Uber</li>
             <li>OPPO</li>
         </ul>
+    </div>
+</div> -->
+
+
+
+<div class="tab experience-container container">
+    <h2>Where I’ve worked</h2>
+    <div class="experience-box">
+        <div class="experience-item">
+            <span class="tablinks" onclick="openTab(event, 'Uprithm KK')">Uprithm KK</span>
+            <span class="tablinks" onclick="openTab(event, 'Milliman')">Milliman</span>
+            <span class="tablinks" onclick="openTab(event, 'Uber')">Uber</span>
+            <span class="tablinks" onclick="openTab(event, 'OPPO')">OPPO</span>
+        </div>
+
+        <div id="Uprithm" class="tabcontent container">
+            <h3>UI/UX Designer @ Uprithm KK</h3>
+            <p class="paragraph">2020 Feb - 2021 Sep</p>
+            <p class="paragraph">- Worked remotely with a Japan-based startup in recruitment industry, in collaboration with CEO, developer and project manager to reinvent solutions in digital and labour market across the countries, mainly Japan, Taiwan, India and the US.
+            <br>- Designed website and product UI / UX in addition to graphic design and branding.</p>
+        </div>
+        <div id="Milliman" class="tabcontent container">
+            <h3>UI/UX Designer @ Uprithm KK</h3>
+            <p class="paragraph">2020 Feb - 2021 Sep</p>
+            <p class="paragraph">- Worked remotely with a Japan-based startup in recruitment industry, in collaboration with CEO, developer and project manager to reinvent solutions in digital and labour market across the countries, mainly Japan, Taiwan, India and the US.
+            <br>- Designed website and product UI / UX in addition to graphic design and branding.</p>
+        </div>
     </div>
 </div>
 
@@ -131,6 +163,23 @@
 
 </div>
 </div>
+
+<!-- work experience tab -->
+<script>
+    function openTab(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
 
 </body>
 </html>

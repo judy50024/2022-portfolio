@@ -97,7 +97,7 @@ h2 {
 
 // ======================================= 按鈕
 button {
-  border: solid 1px $red;
+  border: solid 2px $red;
   background-color: transparent;
   padding: 12px 80px;
   margin: 1rem 0;
@@ -110,6 +110,11 @@ button {
     color: $white;
     transition: 0.5s;
   }
+
+  i{
+    margin-right: .4rem;
+  }
+
 
 }
 
