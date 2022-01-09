@@ -13,6 +13,7 @@
 #page-container {
     position: relative;
     min-height: 100vh;
+    max-width: 1440px;
 }
 
 
@@ -25,6 +26,7 @@
     }
 }
 
+//services
 #services-background-1, #services-background-2{
     width: 100%;
 }
@@ -49,16 +51,22 @@
         margin: 0 auto;
         padding: 1rem;
 
+        @include pad{
+            flex-direction: column;
+        }
+
         .services-item{
             display: flex;
             flex-direction: column;
             align-items: center;
 
             img{
-                max-width: 400px;
+                max-width: 300px;
                 width: 100%;
             }
         }
+
+
     }
 }
 
@@ -108,15 +116,35 @@
 
 //work{
 .work-item{
-    border: solid 1px blue;
     display: flex;
     flex-direction: row;
+
+    @include pad{
+        flex-direction: column;
+
+    }
+
+    img{
+
+        @include lg-desktop{
+            width: 100%;
+            max-width: 660px;
+        }
+
+    }
 
 
     .work-info{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 60%;
+
+
+        @include pad{
+            width: 100%;
+        }
+
 
         .work-description{
             padding: 1rem;
@@ -124,9 +152,25 @@
 
         .ctas{
             text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            button{
+                    margin: .8rem;
+                    padding: .8rem 2.2rem;
+            }
+
+            @include laptop{
+                flex-direction: column;
+                border: solid 1px red;
+            }
         }
 
     }
+
+
 }
 
 //experience
@@ -136,13 +180,21 @@
     justify-content: flex-start;
     align-items: flex-start;
 
+    @include pad{
+        flex-direction: column;
+    }
+
     .experience-item{
         border: solid 1px blue;
         display: inline-flex;
         flex-direction: column;
         width: 40%;
-  
 
+        @include pad{
+            flex-direction: row;
+            width: 100%;
+        }
+  
         .tablinks{
                 border-left: solid 4px $red;
                 cursor: pointer;
@@ -153,6 +205,13 @@
                 &:hover{
                     color: $red;
                     transition: .3s;
+                }
+
+                @include pad{
+                    border-left: none;
+                    border-top: solid 4px $red; 
+                    padding: .2rem;
+                    margin: .5rem;
                 }
         }
     }
@@ -172,6 +231,7 @@
         }
     }
 
+
 }
 
 
@@ -187,10 +247,12 @@
     }
 
 form{
-        width: 60%;
+        width: 80%;
+        max-width: 480px;
         display: flex;
         flex-direction: column;
         margin-bottom: 60px;
+
         label{
             margin: 1rem 0;
 

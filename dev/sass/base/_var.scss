@@ -102,6 +102,7 @@ button {
   padding: 12px 80px;
   margin: 1rem 0;
   cursor: pointer;
+  text-align: center;
   @include paragraph;
   transition: 0.5s;
 
@@ -123,7 +124,7 @@ button {
 $lg_bkpoint: 1441.02px; //大於桌機
 $m_bkpoint: 991.98px; //橫式平板
 $ms_bkpoint: 767.98px; //平板
-$s_bkpoint: 575.98px; //小平板
+// $s_bkpoint: 575.98px; //小平板
 $xs_bkpoint: 413.98px; //垂直手機
 
 @mixin lg-desktop {
@@ -144,11 +145,11 @@ $xs_bkpoint: 413.98px; //垂直手機
   }
 }
 
-@mixin small_pad {
-  @media(max-width:$s_bkpoint) {
-    @content;
-  }
-}
+// @mixin small_pad {
+//   @media(max-width:$s_bkpoint) {
+//     @content;
+//   }
+// }
 
 @mixin mobile {
   @media(max-width:$xs_bkpoint) {
