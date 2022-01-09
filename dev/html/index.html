@@ -13,12 +13,18 @@
 <!-- navbar -->
 @@include('./layout/navbar.html')
 
+<div id="page-container">
 <!-- heading -->
     <div class="heading-container container"> 
         <h1>Judy Li <br> Web Developer & Designer</h1>
         <p class="subtitle">I'm a designer turned developer. <br>
             Currently, I'm focused on building things for web with trendy UI, interaction and human-centered design.
         </p>
+        <a href="">
+            <button id="resume" class="external">
+                See Resume
+            </button>
+        </a>   
     </div>
 <!-- work -->
     <div class="work-container container" id="work">
@@ -50,119 +56,116 @@
         </div>
     </div>
 
+
 <!-- about -->
-<div class="about-container container" id="about">
-    <h2>About</h2>
-    <p class="paragraph">
-        I’m Judy Li, <br>
-        a professional UI/UX Designer with Front end Development skills. <br>
-        I develop websites with HTML, CSS and JavaScript. <br>
-        I have top skills and creativity in using design softwares like Figma, Adobe XD, Illustrator and Photoshop.
-        <br><br>
-        My top goal is to combine aesthetic with technology, and never stop learning new things.
-    </p>
-    <a href="">
-        <button id="resume" class="external">See Resume</button>
-    </a>   
-</div>
+    <div class="about-container container" id="about">
+        <h2>About</h2>
+        <p class="paragraph">
+            I’m Judy Li, <br>
+            a professional UI/UX Designer with Front end Development skills. <br>
+            I develop websites with HTML, CSS and JavaScript. <br>
+            I have top skills and creativity in using design softwares like Figma, Adobe XD, Illustrator and Photoshop.
+            <br><br>
+            My top goal is to combine aesthetic with technology, and never stop learning new things.
+        </p>
+        <a href="">
+            <button id="resume" class="external">
+                See Resume
+            </button>
+        </a>   
+    </div>
 
 <!-- work experience -->
-<!-- <div class="experience-container container">
+    <div class="tab experience-container container">
+        <h2>Where I’ve worked</h2>
+        <div class="experience-box">
+            <div class="experience-item">
+                <span class="tablinks" onclick="openTab(event, 'Uprithm KK')">Uprithm KK</span>
+                <span class="tablinks" onclick="openTab(event, 'Milliman')">Milliman</span>
+                <span class="tablinks" onclick="openTab(event, 'Uber')">Uber</span>
+                <span class="tablinks" onclick="openTab(event, 'OPPO')">OPPO</span>
+            </div>
 
-    <div class="tabs">
-        <ul>
-            <li>Uprithm KK</li>
-            <li>Milliman</li>
-            <li>Uber</li>
-            <li>OPPO</li>
-        </ul>
-    </div>
-</div> -->
-
-
-
-<div class="tab experience-container container">
-    <h2>Where I’ve worked</h2>
-    <div class="experience-box">
-        <div class="experience-item">
-            <span class="tablinks" onclick="openTab(event, 'Uprithm KK')">Uprithm KK</span>
-            <span class="tablinks" onclick="openTab(event, 'Milliman')">Milliman</span>
-            <span class="tablinks" onclick="openTab(event, 'Uber')">Uber</span>
-            <span class="tablinks" onclick="openTab(event, 'OPPO')">OPPO</span>
-        </div>
-
-        <div id="Uprithm" class="tabcontent container">
-            <h3>UI/UX Designer @ Uprithm KK</h3>
-            <p class="paragraph">2020 Feb - 2021 Sep</p>
-            <p class="paragraph">- Worked remotely with a Japan-based startup in recruitment industry, in collaboration with CEO, developer and project manager to reinvent solutions in digital and labour market across the countries, mainly Japan, Taiwan, India and the US.
-            <br>- Designed website and product UI / UX in addition to graphic design and branding.</p>
-        </div>
-        <div id="Milliman" class="tabcontent container">
-            <h3>UI/UX Designer @ Uprithm KK</h3>
-            <p class="paragraph">2020 Feb - 2021 Sep</p>
-            <p class="paragraph">- Worked remotely with a Japan-based startup in recruitment industry, in collaboration with CEO, developer and project manager to reinvent solutions in digital and labour market across the countries, mainly Japan, Taiwan, India and the US.
-            <br>- Designed website and product UI / UX in addition to graphic design and branding.</p>
+            <div id="Uprithm" class="tabcontent container">
+                <h3>UI/UX Designer @ Uprithm KK</h3>
+                <p class="paragraph">2020 Feb - 2021 Sep</p>
+                <p class="paragraph">- Worked remotely with a Japan-based startup in recruitment industry, in collaboration with CEO, developer and project manager to reinvent solutions in digital and labour market across the countries, mainly Japan, Taiwan, India and the US.
+                <br>- Designed website and product UI / UX in addition to graphic design and branding.</p>
+            </div>
+            <div id="Milliman" class="tabcontent container">
+                <h3>UI/UX Designer @ Uprithm KK</h3>
+                <p class="paragraph">2020 Feb - 2021 Sep</p>
+                <p class="paragraph">- Worked remotely with a Japan-based startup in recruitment industry, in collaboration with CEO, developer and project manager to reinvent solutions in digital and labour market across the countries, mainly Japan, Taiwan, India and the US.
+                <br>- Designed website and product UI / UX in addition to graphic design and branding.</p>
+            </div>
         </div>
     </div>
-</div>
 
 <!-- services -->
-<div class="background-section" id="services">
-    <h2 >Services</h2>
-    <div class="services-container container">
-        <div class="services-container">
-            <div class="services-item">
-                <img src="./images/services-web.png" alt="services-web">
-                <p class="subtitle">Web Development</p>
-            </div>
-            <div class="services-item">
-                <img src="./images/services-product.png" alt="services-product">
-                <p class="subtitle">Product Design</p>
-            </div>
-            <div class="services-item">
-                <img src="./images/services-graphic.png" alt="services-graphic">
-                <p class="subtitle">Graphic Design</p>
+    
+    <img src="./images/services-background-1.svg" alt="" id="services-background-1">
+    <div class="background-section" id="services">
+        <h2 >Services</h2>
+        <div class="services-container container">
+            <div class="services-container">
+                <div class="services-item">
+                    <img src="./images/services-web.png" alt="services-web">
+                    <p class="subtitle">Web Development</p>
+                </div>
+                <div class="services-item">
+                    <img src="./images/services-product.png" alt="services-product">
+                    <p class="subtitle">Product Design</p>
+                </div>
+                <div class="services-item">
+                    <img src="./images/services-graphic.png" alt="services-graphic">
+                    <p class="subtitle">Graphic Design</p>
+                </div>
             </div>
         </div>
-    </div>
 
     <!-- tech stack -->
-    <div class="tech-container">
-        <h2>Tech Stack</h2>
-        <div class="tech-carousel-container">
-            <div class="tech-carousel">
-                <img src="././images/carousel.svg" alt="tech-stack">
-                <img src="././images/carousel.svg" alt="tech-stack">
-            </div> 
+        <div class="tech-container">
+            <h2>Tech Stack</h2>
+            <div class="tech-carousel-container">
+                <div class="tech-carousel">
+                    <img src="././images/carousel.svg" alt="tech-stack">
+                    <!-- <img src="././images/carousel.svg" alt="tech-stack"> -->
+                </div> 
+            </div>
         </div>
     </div>
-</div>
+    <img src="./images/services-background-2.svg" alt="" id="services-background-2">   
 
 <!-- contact -->
-<div class="contact-container container" id="contact">
-    <div class="contact-box">
-        <h2>Contact</h2>
-        <p class="paragraph">Got questions? <br>
-            Interested in collaboration? <br>
-            Feel free to drop a message. 
-        </p>
+    <div class="contact-container container" id="contact">
+        <div class="contact-box">
+            <h2>Contact</h2>
+            <p class="paragraph">Got questions? <br>
+                Interested in collaboration? <br>
+                Feel free to drop a message. 
+            </p>
+        </div>
+
+        <form action="">
+            <label for="name">Name<br>
+                <input type="text" name="name" id="name">
+            </label>
+            <label for="email">Email<br>
+                <input type="email" name="email" id="email">
+            </label>
+            <label for="message">Message<br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </label>
+            <button class="">Submit</button>
+        </form>    
+
     </div>
-
-    <form action="">
-        <label for="name">Name<br>
-            <input type="text" name="name" id="name">
-        </label>
-        <label for="email">Email<br>
-            <input type="email" name="email" id="email">
-        </label>
-        <label for="message">Message<br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        </label>
-        <button class="">Submit</button>
-    </form>    
-
 </div>
+<!-- footer -->
+@@include('./layout/footer.html')
 </div>
+
+
 
 <!-- work experience tab -->
 <script>
@@ -179,7 +182,11 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
-    </script>
+</script>
 
 </body>
 </html>
+
+
+
+  
