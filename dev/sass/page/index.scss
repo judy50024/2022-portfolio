@@ -16,10 +16,6 @@
     max-width: 1440px;
 }
 
-h1{
-    border: solid 1px red;
-}
-
 // social
 
 .social{
@@ -136,6 +132,7 @@ h1{
 .work-item{
     display: flex;
     flex-direction: row;
+    margin: 2rem 0;
 
     @include pad{
         flex-direction: column;
