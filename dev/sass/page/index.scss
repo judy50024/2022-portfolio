@@ -16,18 +16,22 @@
     max-width: 1440px;
 }
 
+h1{
+    border: solid 1px red;
+}
+
 // social
 
 .social{
-    position: relative;
+    // position: relative;
     border: solid 1px red;
 
-    li{
-        border: solid 1px red;
-        position: absolute;
-        bottom: 0;
-        left: 12px;
-    }
+    // ul{
+    //     border: solid 1px red;
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 12px;
+    // }
 } 
 
 
