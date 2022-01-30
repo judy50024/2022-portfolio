@@ -133,7 +133,7 @@ $xs_bkpoint: 413.98px; //垂直手機
   }
 }
 
-@mixin latop {
+@mixin laptop {
   @media(max-width:$m_bkpoint){
     @content;
   }

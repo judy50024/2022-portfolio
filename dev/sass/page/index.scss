@@ -16,18 +16,33 @@
     max-width: 1440px;
 }
 
+
 // social
-
 .social{
-    // position: relative;
-    border: solid 1px red;
+    position: relative;
 
-    // ul{
-    //     border: solid 1px red;
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 12px;
-    // }
+    ul{
+        position: fixed;
+        margin-top: 45vh;
+        right: 2%;
+        z-index: 999;
+        
+        i{
+            opacity: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 44px;
+            margin: 1rem auto;
+
+            &:hover{
+                color: $red;
+                opacity: 1;
+            }
+        }
+
+    }
+
 } 
 
 
