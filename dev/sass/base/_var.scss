@@ -1,5 +1,4 @@
-// 全域
-//======================================= 字體大小
+// global scope
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 * {
   box-sizing: border-box;
@@ -17,19 +16,25 @@ img {
   padding: 2rem;
 }
 
-//======================================= 顏色
+//======================================= color
 $black: #393939;
 $white: #FFFFFF;
 $red: #FF0082;
 $yellow: #FFCD1A;
 $blue: #1C7EEE;
 
-//======================================= a標籤
+//======================================= a tag
 a {
   text-decoration: none;
   color: black;
 }
 
+// ======================================= transition
+@mixin transition {
+  transition: 0.5s;
+}
+
+// ======================================= fonts
 h1,
 h2,
 h3,
@@ -40,7 +45,7 @@ p {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-// fonts
+
 $h1: 60px;
 $h2: 40px;
 
@@ -104,20 +109,19 @@ button {
   cursor: pointer;
   text-align: center;
   @include paragraph;
-  transition: 0.5s;
+  @include transition;
 
   &:hover{
     background-color: $red;
     color: $white;
-    transition: 0.5s;
+    @include transition;
   }
 
   i{
     margin-right: .4rem;
   }
-
-
 }
+
 
 
 // ======================================= RWD

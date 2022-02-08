@@ -225,10 +225,12 @@ footer {
   align-items: center;
   width: 44px;
   margin: 1rem auto;
+  transition: 0.5s;
 }
 .social ul i:hover {
   color: #FF0082;
   opacity: 1;
+  transition: 0.5s;
 }
 
 .heading-container {
@@ -275,33 +277,6 @@ footer {
   width: 100%;
 }
 
-.tech-container {
-  padding: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.tech-container .tech-carousel-container {
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.tech-container .tech-carousel-container .tech-carousel {
-  display: block;
-  width: 200%;
-  height: 100px;
-  position: absolute;
-  overflow: hidden;
-  animation: marquee 20s linear infinite;
-}
-.tech-container .tech-carousel-container .tech-carousel img {
-  float: left;
-  width: 50%;
-  padding: 1rem;
-}
-
 .work-item {
   display: flex;
   flex-direction: row;
@@ -332,8 +307,11 @@ footer {
   }
 }
 .work-item .work-info .work-description {
-  margin: 1.2rem;
+  margin: 1.5rem;
   margin-top: 0;
+}
+.work-item .work-info .work-description p {
+  margin-bottom: 1rem;
 }
 .work-item .work-info .ctas {
   text-align: center;
@@ -350,6 +328,10 @@ footer {
     flex-direction: column;
     border: solid 1px red;
   }
+}
+
+.work-archive button {
+  margin-right: 2rem;
 }
 
 .experience-box {
@@ -405,6 +387,33 @@ footer {
 }
 .experience-box .tabcontent > * {
   padding: 0.4rem 0;
+}
+
+.tech-container {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tech-container .tech-carousel-container {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.tech-container .tech-carousel-container .tech-carousel {
+  display: block;
+  width: 200%;
+  height: 100px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+}
+.tech-container .tech-carousel-container .tech-carousel img {
+  float: left;
+  width: 50%;
+  padding: 1rem;
 }
 
 .contact-container {
