@@ -107,7 +107,7 @@
 .work-item{
     display: flex;
     flex-direction: row;
-    margin: 4.2rem 0;
+    margin-bottom: 5rem;
 
     @include pad{
         flex-direction: column;

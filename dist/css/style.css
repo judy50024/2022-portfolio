@@ -280,7 +280,7 @@ footer {
 .work-item {
   display: flex;
   flex-direction: row;
-  margin: 4.2rem 0;
+  margin-bottom: 5rem;
 }
 @media (max-width: 767.98px) {
   .work-item {
