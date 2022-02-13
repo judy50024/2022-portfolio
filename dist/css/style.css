@@ -404,16 +404,11 @@ footer {
 }
 .tech-container .tech-carousel-container .tech-carousel {
   display: block;
-  width: 200%;
+  width: 100%;
   height: 100px;
   position: absolute;
   overflow: hidden;
-  animation: marquee 20s linear infinite;
-}
-.tech-container .tech-carousel-container .tech-carousel img {
-  float: left;
-  width: 50%;
-  padding: 1rem;
+  background: url(../images/carousel.svg) repeat-x;
 }
 
 .contact-container {
