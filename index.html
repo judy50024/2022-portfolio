@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a39c52b3e6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Judy Li</title>
+</head>
+<body>
+<div class="background">
+    <div class="blob">
+    </div>
+
+<!-- navbar -->
+@@include('./layout/navbar.html')
+
+
+<!-- social -->
+<div class="social">
+    <ul>
+        <li><a href="https://www.linkedin.com/in/judy50024/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://github.com/judy50024" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+        <li><a href="https://www.behance.net/judy5002444" target="_blank"><i class="fab fa-behance-square fa-2x"></i></a></li>
+        <li><a href="mailto: judylisdesign@gmail.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a></li>
+    </ul>
+</div>
+
+<div id="page-container">
+<!-- heading -->
+<div data-aos="fade-right" data-aos-duration="1000">
+    <div class="heading-container container"> 
+        <h1>Judy Li</h1>
+        <p class="subtitle">I'm a UI/UX designer with developer skills. <br>
+            Currently, I'm focused on building things for products with trendy UI, interaction and human-centered design.
+        </p>
+        <a href="https://drive.google.com/file/d/1xNzSQLhobi2UmCscRZNqm5vHaRWJtSxB/view?usp=sharing" target="_blank">
+            <button id="resume" class="external">
+                See Resume
+            </button>
+        </a>   
+    </div>
+</div>
+
+<!-- work -->
+<div class="work-container container" id="work">
+    <h2>Work</h2>
+
+    <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="work-item">
+            <a href="https://judy50024.github.io/Cryptostal/" target="_blank">
+                <img src="./images/project/cryptostal.gif" alt="cryptostal-cover">
+            </a>
+            <div class="work-info">
+                <div class="work-description">
+                    <p class="subtitle">Cryptostal</p>
+                    <p class="paragraph">A make-up NFT project official website designed and developed by me, including the production of the NFT GIFs minting on Polygon and can trade on Opensea.
+                    </p>
+                </div>
+                <div class="ctas">
+                    <a href="https://judy50024.github.io/Cryptostal/" target="_blank">
+                        <button id="view-project" class="external">
+                            <i class="fas fa-external-link-alt"></i>View It Here
+                        </button>
+                    </a>   
+                    <a href="https://github.com/judy50024/Cryptostal" target="_blank">
+                        <button id="view-github" class="github">
+                            <i class="fab fa-github"></i>View Github
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="work-item">
+            <div class="work-info">
+                <div class="work-description">
+                    <p class="subtitle">To Do List</p>
+                    <p class="paragraph">
+                        My first To Do List using Vue.js, designed in simplism and monotone style. Functions include: create, read, update, delete and star the tasks.
+                    </p>
+                </div>
+                <div class="ctas">
+                    <a href="https://judy50024.github.io/todolist-vue/" target="_blank">
+                        <button id="view-project" class="external">
+                            <i class="fas fa-external-link-alt"></i>View It Here
+                        </button>
+                    </a>   
+                    <a href="https://github.com/judy50024/todolist-vue" target="_blank">
+                        <button id="view-github" class="github">
+                            <i class="fab fa-github"></i>View Github
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <a href="https://judy50024.github.io/todolist-vue/" target="_blank">
+                <img src="./images/project/todolist.png" alt="todolist-cover">
+            </a>
+        </div>
+    </div>
+
+    <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+        <div class="work-item">
+            <div class="work-info">
+                <div class="work-description">
+                    <p class="subtitle">Portfolio Archive</p>
+                    <p class="paragraph">
+                        Versions of my past portfolios.
+                    </p>
+                </div>
+                <div class="ctas">
+                    <a href="https://judywebsite444.herokuapp.com" target="_blank">
+                        <button id="view-project" class="external">
+                            <i class="fas fa-external-link-alt"></i>2020
+                        </button>
+                    </a>   
+                    <a href="https://judylisdesign.myportfolio.com/work" target="_blank">
+                        <button id="view-github" class="github">
+                            <i class="fas fa-external-link-alt"></i>2021
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- 
+    <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="300">
+        <h2>Portfolio Archive</h2>
+        <div class="work-item">
+                <div class="work-info">
+                    <p class="paragraph">
+                        Versions of my past portfolios.
+                    </p>
+
+                    <div class="ctas">
+                        <a href="https://judywebsite444.herokuapp.com" target="_blank" class="archive">
+                            <button class="archive-date">
+                                <i class="fas fa-external-link-alt"></i>2020
+                            </button>
+                        </a>
+
+                        <a href="https://judylisdesign.myportfolio.com/work" target="_blank" class="archive">
+                            <button class="archive-date">
+                                <i class="fas fa-external-link-alt"></i>2021
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+        </div>
+    </div> -->
+</div>
+
+
+
+
+<!-- about -->
+<div data-aos="fade-up" data-aos-duration="1000">
+
+    <div class="about-container container" id="about">
+        <h2>About</h2>
+        <p class="paragraph">
+            I’m Judy Li, <br>
+            A professional UI/UX Designer with Frontend skills. <br>
+            I develop websites with HTML, CSS and JavaScript. <br>
+            I have top skills and creativity in using design softwares like Figma, Adobe XD, Illustrator and Photoshop.
+            <br><br>
+            My top goal is to combine aesthetic with technology, and never stop learning new things.
+        </p>
+        <a href="https://drive.google.com/file/d/1xNzSQLhobi2UmCscRZNqm5vHaRWJtSxB/view?usp=sharing" target="_blank">
+            <button id="resume" class="external">
+                See Resume
+            </button>
+        </a>   
+    </div>
+
+</div>
+
+<!-- work experience -->
+    <div class="tab experience-container container">
+        <h2>Where I’ve worked</h2>
+        <div class="experience-box">
+            <div class="experience-item">
+                <span class="tablinks" onclick="openTab(event, 'Uprithm KK')">Uprithm KK</span>
+                <span class="tablinks" onclick="openTab(event, 'Milliman')">Milliman</span>
+                <span class="tablinks" onclick="openTab(event, 'Uber')">Uber</span>
+                <span class="tablinks" onclick="openTab(event, 'OPPO')">OPPO</span>
+            </div>
+
+            <div id="Uprithm" class="tabcontent container">
+                <h3>UI/UX Designer @ Uprithm KK</h3>
+                <p class="paragraph">2020 Feb - 2021 Sep</p>
+                <p class="paragraph">- Worked remotely with a Japan-based startup in recruitment industry, in collaboration with CEO, developer and project manager to reinvent solutions in digital and labour market across the countries, mainly Japan, Taiwan, India and the US.
+                <br>- Designed website and product UI / UX in addition to graphic design and branding.</p>
+            </div>
+            <div id="Milliman" class="tabcontent container">
+                <h3>UI/UX Designer @ Uprithm KK</h3>
+                <p class="paragraph">2020 Feb - 2021 Sep</p>
+                <p class="paragraph">- Worked remotely with a Japan-based startup in recruitment industry, in collaboration with CEO, developer and project manager to reinvent solutions in digital and labour market across the countries, mainly Japan, Taiwan, India and the US.
+                <br>- Designed website and product UI / UX in addition to graphic design and branding.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- services -->
+<div data-aos="fade-up" data-aos-duration="1000">
+    <img src="./images/services-background-1.svg" alt="" id="services-background-1">
+    <div class="background-section" id="services">
+        <h2 >Services</h2>
+        <div class="services-container container">
+            <div class="services-container">
+                <div class="services-item">
+                    <img src="./images/services-web.png" alt="services-web">
+                    <p class="subtitle">Web Development</p>
+                </div>
+                <div class="services-item">
+                    <img src="./images/services-product.png" alt="services-product">
+                    <p class="subtitle">Product Design</p>
+                </div>
+                <div class="services-item">
+                    <img src="./images/services-graphic.png" alt="services-graphic">
+                    <p class="subtitle">Graphic Design</p>
+                </div>
+            </div>
+        </div>
+  
+
+    <!-- tech stack -->
+        <div class="tech-container">
+            <h2>Tech Stack</h2>
+            <div class="tech-carousel-container">
+                <div class="tech-carousel">
+                    <!-- <img src="././images/carousel.svg" alt="tech-stack"> -->
+                    <!-- <img src="././images/carousel.svg" alt="tech-stack"> -->
+                </div> 
+            </div>
+        </div>
+    </div>
+    <img src="./images/services-background-2.svg" alt="" id="services-background-2">   
+</div>
+
+<!-- contact -->
+<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+    <div class="contact-container container" id="contact">
+        <div class="contact-box">
+            <h2>Contact</h2>
+            <p class="paragraph">Got questions? <br>
+                Interested in collaboration? <br>
+                Feel free to drop a message. 
+            </p>
+        </div>
+        <a href="mailto: judylisdesign@gmail.com" target="_blank">
+            <button class="contact-email">Email me</button>
+        </a> 
+
+        <!-- <form action="">
+            <label for="name">Name<br>
+                <input type="text" name="name" id="name">
+            </label>
+            <label for="email">Email<br>
+                <input type="email" name="email" id="email">
+            </label>
+            <label for="message">Message<br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </label>
+            <button class="">Submit</button>
+        </form>     -->
+
+    </div>
+</div>
+
+</div> <!--background ending-->
+<!-- footer -->
+@@include('./layout/footer.html')
+</div>
+
+
+
+<!-- work experience tab -->
+<!-- <script>
+    function openTab(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script> -->
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
+
+
+
+  
