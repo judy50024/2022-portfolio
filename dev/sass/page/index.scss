@@ -12,10 +12,10 @@
 
 .blob{
     position: fixed;
-    height: 180px;
+    height: 200px;
     width: 200px;
     top: 8rem;
-    right: 1rem;
+    right: 2rem;
     border-radius: 100% 97% / 80% 90%;
     
     // border: solid 1px rgba(255,255,255,0.2);
@@ -23,25 +23,25 @@
     // border-bottom: solid 1px rgba(255,255,255,0.2);
     backdrop-filter: blur(1.5px);
     box-shadow: 0 2px 12px rgba(255,255,255,.3);
-    background: rgba(255,255,255,0.1);
-    animation: blob-move 5s linear infinite, move 15s linear infinite;
+    background: rgba(255,255,255,0.2);
+    animation: blob-move 5s linear infinite, move 20s linear infinite;
     z-index: 999;
 
     @keyframes blob-move{
      0%, 100%{
-        border-radius: 40% 87% 57% 68% / 20% 45% 78% 68%;
+        border-radius: 50% 87% 80% 68% / 60% 90% 78% 100%;
       }
       60%{
-        border-radius: 100% 90% 77% 88% / 100% 95% 35% 88%;
+        border-radius: 90% 90% 77% 88% / 98% 95% 35% 88%;
       }
 
     }
 
     @keyframes move {
         0%   { transform: scale(1)   translate(0vw, 0vh); }
-        30%  { transform: scale(0.5, 1) translate(2px, -16px) rotate(80deg); }
-        60%  { transform: scale(1.2)  rotate(160deg);}
-        80%  { transform: scale(1)  translate(20px, 120px) rotate(-20deg);}
+        30%  { transform: scale(0.8) translate(10vw, 10vh) rotate(80deg); }
+        60%  { transform: scale(1)  rotate(160deg);}
+        80%  { transform: scale(1.2)  translate(-10vw, -20vh) rotate(-20deg);}
         100% { transform: scale(1)   translate(0vw, 0vh); }
       }
     
@@ -76,7 +76,7 @@
             @include transition;
 
             &:hover{
-                color: $red;
+                color: $primary;
                 opacity: 1;
                 @include transition;
             }
@@ -135,8 +135,6 @@
                 width: 100%;
             }
         }
-
-
     }
 }
 
@@ -150,7 +148,6 @@
 
     @include pad{
         flex-direction: column;
-
     }
 
     img{
@@ -202,16 +199,10 @@
     }
 }
 
-//archive
-.work-archive{
-    button{
-        margin-right: 2rem;
-    }
-}
 
 //experience
 .experience-box{
-    border: solid 1px red;
+    // border: solid 1px red;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -221,7 +212,7 @@
     }
 
     .experience-item{
-        border: solid 1px blue;
+        // border: solid 1px blue;
         display: inline-flex;
         flex-direction: column;
         width: 40%;
@@ -232,20 +223,20 @@
         }
   
         .tablinks{
-                border-left: solid 4px $red;
+                border-left: solid 4px $primary;
                 cursor: pointer;
                 padding: .5rem;
                 margin: 1rem;
                 transition: .3s;
 
                 &:hover{
-                    color: $red;
+                    color: $primary;
                     transition: .3s;
                 }
 
                 @include pad{
                     border-left: none;
-                    border-top: solid 4px $red; 
+                    border-top: solid 4px $primary; 
                     padding: .2rem;
                     margin: .5rem;
                 }
@@ -254,11 +245,11 @@
 
     #Uprithm{
         display: block;
-        border: solid 1px red;
+        // border: solid 1px red;
     }
 
     .tabcontent{
-        border: solid 1px orange;
+        // border: solid 1px orange;
         margin: 0;
         display: none;
 
@@ -332,28 +323,28 @@
         width: 60%;
     }
 
-form{
-        width: 80%;
-        max-width: 480px;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 60px;
+// form{
+//         width: 80%;
+//         max-width: 480px;
+//         display: flex;
+//         flex-direction: column;
+//         margin-bottom: 60px;
 
-        label{
-            margin: 1rem 0;
+//         label{
+//             margin: 1rem 0;
 
-            input, textarea{
-                border: solid 1px $red;
-                width: 100%;
-                height: 32px;
-                margin-top: .5rem;
-                background-color: transparent;
-            }
+//             input, textarea{
+//                 border: solid 1px $primary;
+//                 width: 100%;
+//                 height: 32px;
+//                 margin-top: .5rem;
+//                 background-color: transparent;
+//             }
 
-            textarea{
-                height: 120px;
-                background-color: transparent;
-            }
-        }
-    }
+//             textarea{
+//                 height: 120px;
+//                 background-color: transparent;
+//             }
+//         }
+//     }
 }

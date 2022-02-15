@@ -25,7 +25,7 @@ header{
             transition: .3s;
 
             &:hover{
-                color: $red;
+                color: $primary;
                 transition: .3s;
                 
             }
@@ -35,11 +35,11 @@ header{
 }
 
 .resume{
-    border: solid 1px $red;
+    border: solid 1px $primary;
     padding: .3rem 1rem;
 
     &:hover{
-        background-color: $red;
+        background-color: $primary;
         color: $white;
         transition: 0.5s;
     }

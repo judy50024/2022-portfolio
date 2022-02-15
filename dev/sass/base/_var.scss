@@ -19,7 +19,7 @@ img {
 //======================================= color
 $black: #393939;
 $white: #FFFFFF;
-$red: #FF0082;
+$primary: #ff1592;
 $yellow: #FFCD1A;
 $blue: #1C7EEE;
 
@@ -100,9 +100,9 @@ h2 {
   color: $font-color;
 }
 
-// ======================================= 按鈕
+// ======================================= button
 button {
-  border: solid 2px $red;
+  border: solid 2.5px $primary;
   background-color: transparent;
   padding: 12px 80px;
   margin: 1rem 0;
@@ -112,7 +112,7 @@ button {
   @include transition;
 
   &:hover{
-    background-color: $red;
+    background-color: $primary;
     color: $white;
     @include transition;
   }
