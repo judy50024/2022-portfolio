@@ -152,6 +152,8 @@
 
     img{
         margin-right: 1rem;
+        max-width: 500px;
+        width: 100%;
 
         @include lg-desktop{
             width: 100%;
