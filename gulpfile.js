@@ -100,7 +100,7 @@ exports.copy = move;
 // sass -> css
 const sass = require("gulp-sass")(require("sass"));
 function sassstyle() {
-  return src("./dev/sass/style.scss").pipe(sass().on("error", sass.logError)).pipe(dest("./doc/css/"));
+  return src("./dev/sass/style.scss").pipe(sass().on("error", sass.logError)).pipe(dest("./docs/css/"));
 }
 exports.style = sassstyle;
 
@@ -114,7 +114,7 @@ function html() {
         basepath: "@file",
       })
     )
-    .pipe(dest("./doc/"));
+    .pipe(dest("./docs/"));
 }
 exports.template = html;
 
@@ -127,7 +127,7 @@ gulp.task("imagemin", () => {
   return gulp
     .src("./dev/images/**")
     .pipe(imagemin()) // 執行優化(壓縮)
-    .pipe(gulp.dest("./doc/images"));
+    .pipe(gulp.dest("./docs/images"));
 });
 
 //watch 監看 sass及html
@@ -146,7 +146,7 @@ const reload = browserSync.reload;
 function browser(done) {
   browserSync.init({
     server: {
-      baseDir: "./doc",
+      baseDir: "./docs",
       index: "index.html",
     },
     port: 3000,
