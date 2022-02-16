@@ -319,6 +319,8 @@ footer {
 .work-item {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 5rem;
 }
 @media (max-width: 767.98px) {
@@ -328,13 +330,13 @@ footer {
 }
 .work-item img {
   margin-right: 1rem;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
 }
 @media (max-width: 1441.02px) {
   .work-item img {
     width: 100%;
-    max-width: 660px;
+    max-width: 500px;
   }
 }
 .work-item .work-info {
