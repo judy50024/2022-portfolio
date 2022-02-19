@@ -341,6 +341,7 @@ footer {
 .work-item .work-info {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   width: 60%;
 }
 @media (max-width: 767.98px) {
@@ -356,7 +357,6 @@ footer {
   margin-bottom: 1rem;
 }
 .work-item .work-info .ctas {
-  text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -370,6 +370,17 @@ footer {
     flex-direction: column;
     border: solid 1px red;
   }
+}
+
+#work-archive {
+  display: flex;
+  justify-content: flex-start;
+}
+#work-archive .work-info {
+  width: 51%;
+}
+#work-archive button {
+  width: 182px;
 }
 
 .experience-box {

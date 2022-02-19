@@ -140,7 +140,6 @@
 }
 
 
-
 //work{
 .work-item{
     display: flex;
@@ -165,10 +164,10 @@
 
     }
 
-
     .work-info{
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         width: 60%;
 
         @include pad{
@@ -184,8 +183,8 @@
             }
         }
 
+
         .ctas{
-            text-align: center;
             display: flex;
             justify-content: space-around;
             align-items: flex-end;
@@ -201,6 +200,19 @@
             }
         }
 
+    }
+}
+
+#work-archive{
+    display: flex;
+    justify-content: flex-start;
+
+    .work-info{
+        width: 51%;
+    }
+
+    button{
+        width: 182px;
     }
 }
 
