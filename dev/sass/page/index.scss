@@ -89,12 +89,13 @@
 
 // heading
 .heading-container{
-    position: relative;
-    top: 60px;
+    // position: relative;
+    padding-top: 60px;
     p{
         margin: 2rem 0;
     }
 }
+
 
 //services
 #services-background-1, #services-background-2{

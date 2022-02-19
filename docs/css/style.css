@@ -273,8 +273,7 @@ footer {
 }
 
 .heading-container {
-  position: relative;
-  top: 60px;
+  padding-top: 60px;
 }
 .heading-container p {
   margin: 2rem 0;
