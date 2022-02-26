@@ -218,24 +218,39 @@
 
 
 //experience
-.experience-box{
-    border: solid 1px red;
-    width: 80%;
-
-
-    @include pad{
-        flex-direction: column;
-    }
-
-    .experience-item{
-        margin-bottom: 2rem;
-
-        & > *{
-            margin-bottom: 1rem;
+.experience-container{
+    .experience-box{
+        // border: solid 1px red;
+        width: 80%;
+        display: flex;
+        // justify-content: center;
+    
+        @include pad{
+            flex-direction: column;
         }
+    
+        &::before{
+            content: '';
+            position: absolute;
+            height: 1100px;
+            width: 3px;
+            background-color: $primary;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+    
+        .experience-item{
+            // border: solid 1px blue;
+            transform: translateX(20px);
+            margin-bottom: 3rem;
+    
+            & > *{
+                margin-bottom: .5rem;
+            }
+        }
+    
     }
-
-
+    
 
 }
 
@@ -250,7 +265,7 @@
     .tech-carousel-container{
         height: 100px;
         width: 100%;
-      
+        
         overflow: hidden;
         position: relative;
 
@@ -264,7 +279,7 @@
 
             background: url(../images/carousel.svg) repeat-x;
 
-          
+            
             // animation: marquee 16s linear infinite;
 
 
@@ -286,6 +301,7 @@
 }
 
 
+
 // contact
 .contact-container{
     max-width: 600px;
@@ -301,28 +317,4 @@
         width: 60%;
     }
 
-// form{
-//         width: 80%;
-//         max-width: 480px;
-//         display: flex;
-//         flex-direction: column;
-//         margin-bottom: 60px;
-
-//         label{
-//             margin: 1rem 0;
-
-//             input, textarea{
-//                 border: solid 1px $primary;
-//                 width: 100%;
-//                 height: 32px;
-//                 margin-top: .5rem;
-//                 background-color: transparent;
-//             }
-
-//             textarea{
-//                 height: 120px;
-//                 background-color: transparent;
-//             }
-//         }
-//     }
 }

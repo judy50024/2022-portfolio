@@ -90,10 +90,16 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 44px;
   line-height: 44px;
   color: #393939;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+}
+
+p {
+  font-size: 22px;
+  line-height: 32px;
+  color: #393939;
 }
 
 .title {
@@ -104,13 +110,7 @@ h2 {
 
 .subtitle {
   font-size: 32px;
-  line-height: 28px;
-  color: #393939;
-}
-
-p {
-  font-size: 24px;
-  line-height: 28px;
+  line-height: 40px;
   color: #393939;
 }
 
@@ -127,8 +127,8 @@ button {
   margin: 1rem 0;
   cursor: pointer;
   text-align: center;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 32px;
   color: #393939;
   transition: 0.5s;
 }
@@ -383,20 +383,30 @@ footer {
   width: 182px;
 }
 
-.experience-box {
-  border: solid 1px red;
+.experience-container .experience-box {
   width: 80%;
+  display: flex;
 }
 @media (max-width: 767.98px) {
-  .experience-box {
+  .experience-container .experience-box {
     flex-direction: column;
   }
 }
-.experience-box .experience-item {
-  margin-bottom: 2rem;
+.experience-container .experience-box::before {
+  content: "";
+  position: absolute;
+  height: 1100px;
+  width: 3px;
+  background-color: #ff1592;
+  border-radius: 3px;
+  overflow: hidden;
 }
-.experience-box .experience-item > * {
-  margin-bottom: 1rem;
+.experience-container .experience-box .experience-item {
+  transform: translateX(20px);
+  margin-bottom: 3rem;
+}
+.experience-container .experience-box .experience-item > * {
+  margin-bottom: 0.5rem;
 }
 
 .tech-container {
