@@ -47,11 +47,11 @@ p {
 
 
 $h1: 60px;
-$h2: 40px;
+$h2: 44px;
 
 $title: 40px;
 $subtitle: 32px;
-$paragraph: 18px;
+$paragraph: 24px;
 $small: 14px;
 
 $font-color: $black;
@@ -69,6 +69,12 @@ h2 {
   padding: 1rem 0;
 }
 
+p{
+  font-size: $paragraph;
+  line-height: 40px;
+  color: $font-color;
+}
+
 
 .title{
   font-size: $title;
@@ -78,21 +84,10 @@ h2 {
 
 .subtitle{
   font-size: $subtitle;
-  line-height: 40px;
-  color: $font-color;
-}
-
-.paragraph{
-  font-size: $paragraph;
   line-height: 28px;
   color: $font-color;
 }
 
-@mixin paragraph{
-  font-size: $paragraph;
-  line-height: 28px;
-  color: $font-color;
-}
 
 .small{
   font-size: $small;

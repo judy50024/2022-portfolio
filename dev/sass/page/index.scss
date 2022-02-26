@@ -219,61 +219,22 @@
 
 //experience
 .experience-box{
-    // border: solid 1px red;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    border: solid 1px red;
+    width: 80%;
+
 
     @include pad{
         flex-direction: column;
     }
 
     .experience-item{
-        // border: solid 1px blue;
-        display: inline-flex;
-        flex-direction: column;
-        width: 40%;
+        margin-bottom: 2rem;
 
-        @include pad{
-            flex-direction: row;
-            width: 100%;
-        }
-  
-        .tablinks{
-                border-left: solid 4px $primary;
-                cursor: pointer;
-                padding: .5rem;
-                margin: 1rem;
-                transition: .3s;
-
-                &:hover{
-                    color: $primary;
-                    transition: .3s;
-                }
-
-                @include pad{
-                    border-left: none;
-                    border-top: solid 4px $primary; 
-                    padding: .2rem;
-                    margin: .5rem;
-                }
+        & > *{
+            margin-bottom: 1rem;
         }
     }
 
-    #Uprithm{
-        display: block;
-        // border: solid 1px red;
-    }
-
-    .tabcontent{
-        // border: solid 1px orange;
-        margin: 0;
-        display: none;
-
-        &>*{
-            padding: .4rem 0;
-        }
-    }
 
 
 }
